@@ -1,0 +1,1860 @@
+<!-- Amanah Jamaat - Dashboard -->
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "outline": "#717974", "inverse-surface": "#293040", "tertiary-container": "#153a2c", "on-error-container": "#93000a", "primary": "#00241a", "on-primary-container": "#79a694", "surface-variant": "#dce2f7", "secondary-container": "#82f5c1", "surface-container": "#e9edff", "on-surface": "#141b2b", "surface-tint": "#3c6658", "primary-fixed": "#beedd9", "on-tertiary-fixed-variant": "#294e3f", "surface-container-low": "#f1f3ff", "tertiary-fixed": "#c3ecd7", "tertiary": "#002418", "on-primary-fixed": "#002117", "on-secondary-fixed-variant": "#005137", "surface-container-high": "#e1e8fd", "on-tertiary": "#ffffff", "secondary-fixed": "#85f8c4", "on-secondary-fixed": "#002114", "primary-container": "#0d3b2e", "background": "#f9f9ff", "on-surface-variant": "#414845", "on-primary": "#ffffff", "inverse-on-surface": "#edf0ff", "secondary": "#006c4a", "surface-container-highest": "#dce2f7", "on-background": "#141b2b", "error": "#ba1a1a", "on-secondary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#00714e", "error-container": "#ffdad6", "tertiary-fixed-dim": "#a8cfbc", "surface-dim": "#d3daef", "on-tertiary-container": "#7ea492", "on-tertiary-fixed": "#002115", "surface-bright": "#f9f9ff", "primary-fixed-dim": "#a3d0be", "inverse-primary": "#a3d0be", "secondary-fixed-dim": "#68dba9", "outline-variant": "#c0c8c3", "on-primary-fixed-variant": "#234e40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "label-caption": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-data-md": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-data-lg": ["JetBrains Mono"], "label-data-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-caption": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-data-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-data-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-data-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Amanah Jamaat Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16nZ1jeXEJTfDLJdPy-52VRgv4VaIim18L4oqtlDd5uOML8LrI7PXyRVbz52ZdNchjjK9eMMl6VmYeN74zCe_Jzz6xasBJTDymbKq5a-LMqhmopC60h2RdepjWDo_HDaam5fOrdoZp_zfMX1Am3xI9v8uKY0W7j-vq_cxQSxhoQrmQJ3VE-3dD0dO-UcBUgiND1H3QxqylX8_VSBNZWBkQNE7OL1NzIMNtZ7Ega0D2dwHCP7eoHsRhQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Amanah Assets</span><span class="font-label-caption text-label-caption text-outline">Dashboard</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Administrator Profile" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArCeM0qK2saw-TdD73YrORM1HTcpg5uIPwqnZJh122DZnRJviClvMpVoB4cG-vgkZBLwZLVJFXhyGKDVw5z0zprEiuaJZhaXwEwDCnjy3O_VFT3bu_wq9_oTiflb8UmPlGQeBViiFdr3UbMqPij6DqFVllJDJ37IJMXPb0--MGKMoDEIKsJC9w2s232vHrh-RLzCv720geJ2hZEG5GAqfDkDSnuZ1-aLJ-_DRRMZRn_t5jTwl6rcHYNQ"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Welcome & Branch Switcher Banner -->
+<section class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-caption text-label-caption text-secondary flex items-center gap-1 font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Trustee Stewardship
+        </span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary font-bold tracking-tight truncate mt-0.5">
+          Assalamu Alaikum, Administrator
+        </h1>
+</div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">mosque</span>
+</div>
+</div>
+<!-- Branch Switcher Dropdown Trigger -->
+<div class="relative">
+<button aria-expanded="false" aria-haspopup="listbox" class="w-full flex items-center justify-between px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors focus:outline-none" id="branchPickerBtn" type="button">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+<span class="font-headline-sm text-headline-sm text-primary truncate" id="selectedBranchLabel">Central Masjid Complex &amp; Community Hall</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline transition-transform duration-200" id="branchChevron">expand_more</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="hidden absolute left-0 right-0 top-full mt-1.5 bg-surface-container-lowest rounded-xl shadow-xl z-30 p-1 space-y-1 overflow-hidden" id="branchDropdown">
+<button class="branch-option w-full text-left px-3 py-2 rounded-lg bg-surface-container-low text-primary font-headline-sm text-headline-sm flex items-center justify-between" data-name="Central Masjid Complex &amp; Community Hall" type="button">
+<span>Central Masjid Complex &amp; Community Hall</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+</button>
+<button class="branch-option w-full text-left px-3 py-2 rounded-lg hover:bg-surface-container-low text-on-surface font-body-md text-body-md flex items-center justify-between" data-name="North Wing Madrassa &amp; Library" type="button">
+<span>North Wing Madrassa &amp; Library</span>
+</button>
+<button class="branch-option w-full text-left px-3 py-2 rounded-lg hover:bg-surface-container-low text-on-surface font-body-md text-body-md flex items-center justify-between" data-name="Youth Recreation &amp; Sports Annex" type="button">
+<span>Youth Recreation &amp; Sports Annex</span>
+</button>
+</div>
+</div>
+</section>
+<!-- High-level KPI Metric Cards Grid (2x2) -->
+<section class="grid grid-cols-2 gap-3">
+<!-- Card 1: Total Assets -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-outline uppercase tracking-wider">Total Assets</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">1,428</div>
+<div class="font-label-data-sm text-label-data-sm text-outline mt-0.5">$248,500 Val.</div>
+</div>
+<div class="flex items-center gap-1 text-secondary pt-1 font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+12 this month</span>
+</div>
+</div>
+<!-- Card 2: Active Utilization -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-outline uppercase tracking-wider">In Use</span>
+<div class="w-7 h-7 rounded-lg bg-secondary-container/60 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">1,180</div>
+<div class="font-label-data-sm text-label-data-sm text-secondary font-semibold mt-0.5">82% Active</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<!-- Card 3: Maintenance / In-Transfer -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-outline uppercase tracking-wider">Service/Transit</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">build_circle</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">42 Items</div>
+<div class="font-label-caption text-label-caption text-outline mt-0.5">Needs action</div>
+</div>
+<div class="flex items-center gap-1 font-label-caption text-label-caption text-on-surface-variant pt-1">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span class="truncate">28 Maint. / 14 Transit</span>
+</div>
+</div>
+<!-- Card 4: Damaged / Scrapped -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-outline uppercase tracking-wider">Damaged/Scrap</span>
+<div class="w-7 h-7 rounded-lg bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[16px]">report_problem</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-error tracking-tight font-bold">18 Items</div>
+<div class="font-label-caption text-label-caption text-outline mt-0.5">Pending review</div>
+</div>
+<div class="flex items-center gap-1 font-label-caption text-label-caption text-error pt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Awaiting disposal</span>
+</div>
+</div>
+</section>
+<!-- Quick Actions Row -->
+<section class="flex flex-col space-y-2">
+<h2 class="font-headline-sm text-headline-sm text-primary px-0.5">Quick Operations</h2>
+<div class="grid grid-cols-4 gap-2">
+<!-- Action 1: QR Scan -->
+<button class="group flex flex-col items-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-transform active:scale-95 shadow-sm text-center" type="button">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</div>
+<span class="font-label-caption text-label-caption text-primary font-semibold leading-tight">Scan Tag</span>
+</button>
+<!-- Action 2: Add New Asset -->
+<button class="group flex flex-col items-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-transform active:scale-95 shadow-sm text-center" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface leading-tight">New Asset</span>
+</button>
+<!-- Action 3: Transfer Asset -->
+<button class="group flex flex-col items-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-transform active:scale-95 shadow-sm text-center" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-primary flex items-center justify-center mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">sync_alt</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface leading-tight">Transfer</span>
+</button>
+<!-- Action 4: Log Damage -->
+<button class="group flex flex-col items-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-transform active:scale-95 shadow-sm text-center" type="button">
+<div class="w-12 h-12 rounded-full bg-surface-container text-error flex items-center justify-center mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">remove_done</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface leading-tight">Log Scrap</span>
+</button>
+</div>
+</section>
+<!-- Physical Audit Alert Banner -->
+<section class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary/15 pointer-events-none blur-xl"></div>
+<div class="flex items-start justify-between gap-3 relative z-10">
+<div class="flex flex-col space-y-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caption text-label-caption font-bold">Upcoming Audit</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary pt-0.5">Annual Q3 Asset Reconciliation</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+          Physical inventory verification starts in <span class="font-semibold text-secondary-container">6 days</span> across all prayer spaces.
+        </p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center shrink-0 text-secondary-container">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+</div>
+<!-- Progress indicator -->
+<div class="mt-4 pt-3 border-t-0 bg-primary/40 rounded-lg p-2.5 flex flex-col space-y-2 relative z-10">
+<div class="flex justify-between items-center font-label-caption text-label-caption">
+<span class="text-on-primary-container">Hall Checklist Preparedness</span>
+<span class="text-secondary-container font-label-data-sm">65% Ready</span>
+</div>
+<div class="w-full bg-on-primary/10 rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-1.5 rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-end relative z-10">
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm font-semibold flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span>Prepare Checklist</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Critical Attention Feed -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Needs Attention</h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caption text-label-caption font-bold">3 Urgent</span>
+</div>
+<button class="text-secondary font-headline-sm text-headline-sm hover:underline" type="button">View All</button>
+</div>
+<div class="flex flex-col space-y-2.5">
+<!-- Item 1: Warranty Ending -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">equalizer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Audio Mixer Board</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">JMT-AV-042 • Main Prayer Hall</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caption text-label-caption font-semibold flex items-center gap-1 shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+            12 Days Left
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Manufacturer warranty expiring. Renew SLA coverage?</span>
+<button class="text-secondary font-label-caption text-label-caption font-bold uppercase hover:underline" type="button">Renew</button>
+</div>
+</div>
+<!-- Item 2: Overdue Maintenance -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Commercial Generator</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">JMT-PWR-003 • North Courtyard</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-caption text-label-caption font-bold flex items-center gap-1 shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            Overdue
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-error">Bi-monthly mechanical servicing past due by 5 days.</span>
+<button class="text-error font-label-caption text-label-caption font-bold uppercase hover:underline" type="button">Schedule</button>
+</div>
+</div>
+<!-- Item 3: Pending Receipt -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col space-y-2.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">table_restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">15 Folding Banquet Tables</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Batch LOT-TAB-89</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-caption text-label-caption font-semibold flex items-center gap-1 shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            In-Transit
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dispatched to Youth Center; confirmation pending.</span>
+<button class="text-secondary font-label-caption text-label-caption font-bold uppercase hover:underline" type="button">Confirm</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Activity Feed -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between px-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary">Custodian Audit Trail</h2>
+<span class="font-label-caption text-label-caption text-outline">Today</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm divide-y-0 p-space-md space-y-4">
+<!-- Activity Item 1 -->
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+            TA
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Tariq Ansari</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container text-primary font-label-caption text-label-caption font-medium">Allotted</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Assigned 4 Portable PA Speakers to Madrassa Hall A.</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline shrink-0">11:42 AM</span>
+</div>
+<!-- Activity Item 2 -->
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+            MR
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Mukhtar Rahim</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container text-primary font-label-caption text-label-caption font-medium">Transferred</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Moved 2 Industrial Vacuum Units to Main Masjid.</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline shrink-0">09:15 AM</span>
+</div>
+<!-- Activity Item 3 -->
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+            FY
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Farhan Yusuf</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-caption text-label-caption font-medium">Audited</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Completed biometric &amp; QR check of Kitchen Inventory.</p>
+</div>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline shrink-0">Yesterday</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple branch switcher dropdown toggle micro-interaction
+  const branchBtn = document.getElementById('branchPickerBtn');
+  const branchDropdown = document.getElementById('branchDropdown');
+  const branchChevron = document.getElementById('branchChevron');
+  const selectedLabel = document.getElementById('selectedBranchLabel');
+  const options = document.querySelectorAll('.branch-option');
+
+  if (branchBtn && branchDropdown) {
+    branchBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = branchBtn.getAttribute('aria-expanded') === 'true';
+      branchBtn.setAttribute('aria-expanded', !isExpanded);
+      branchDropdown.classList.toggle('hidden');
+      if (branchChevron) {
+        branchChevron.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+      }
+    });
+
+    options.forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        const name = opt.getAttribute('data-name');
+        if (selectedLabel && name) {
+          selectedLabel.textContent = name;
+        }
+        branchDropdown.classList.add('hidden');
+        branchBtn.setAttribute('aria-expanded', 'false');
+        if (branchChevron) branchChevron.style.transform = 'rotate(0deg)';
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!branchDropdown.contains(e.target) && !branchBtn.contains(e.target)) {
+        branchDropdown.classList.add('hidden');
+        branchBtn.setAttribute('aria-expanded', 'false');
+        if (branchChevron) branchChevron.style.transform = 'rotate(0deg)';
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(13,59,46,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-between items-center h-16 px-space-sm relative"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 transition-colors text-secondary font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caption text-label-caption">Dashboard</span></a><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="inventory" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-caption text-label-caption">Inventory</span></a><div class="flex-1 flex items-center justify-center"><a class="relative -top-3 w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(13,59,46,0.35)] ring-4 ring-surface active:scale-95 transition-transform" data-path="quick-scan" href="#"><span class="material-symbols-outlined text-[28px] text-secondary-container">qr_code_scanner</span></a></div><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="asset-detail" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-caption text-label-caption">Assets</span></a><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="reports" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-caption text-label-caption">Reports</span></a></div></nav></body></html>
+
+<!-- Amanah Jamaat - Product Detail -->
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "outline": "#717974", "inverse-surface": "#293040", "tertiary-container": "#153a2c", "on-error-container": "#93000a", "primary": "#00241a", "on-primary-container": "#79a694", "surface-variant": "#dce2f7", "secondary-container": "#82f5c1", "surface-container": "#e9edff", "on-surface": "#141b2b", "surface-tint": "#3c6658", "primary-fixed": "#beedd9", "on-tertiary-fixed-variant": "#294e3f", "surface-container-low": "#f1f3ff", "tertiary-fixed": "#c3ecd7", "tertiary": "#002418", "on-primary-fixed": "#002117", "on-secondary-fixed-variant": "#005137", "surface-container-high": "#e1e8fd", "on-tertiary": "#ffffff", "secondary-fixed": "#85f8c4", "on-secondary-fixed": "#002114", "primary-container": "#0d3b2e", "background": "#f9f9ff", "on-surface-variant": "#414845", "on-primary": "#ffffff", "inverse-on-surface": "#edf0ff", "secondary": "#006c4a", "surface-container-highest": "#dce2f7", "on-background": "#141b2b", "error": "#ba1a1a", "on-secondary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#00714e", "error-container": "#ffdad6", "tertiary-fixed-dim": "#a8cfbc", "surface-dim": "#d3daef", "on-tertiary-container": "#7ea492", "on-tertiary-fixed": "#002115", "surface-bright": "#f9f9ff", "primary-fixed-dim": "#a3d0be", "inverse-primary": "#a3d0be", "secondary-fixed-dim": "#68dba9", "outline-variant": "#c0c8c3", "on-primary-fixed-variant": "#234e40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "label-caption": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-data-md": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-data-lg": ["JetBrains Mono"], "label-data-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-caption": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-data-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-data-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-data-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Amanah Jamaat Emblem Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16nZ1jeXEJTfDLJdPy-52VRgv4VaIim18L4oqtlDd5uOML8LrI7PXyRVbz52ZdNchjjK9eMMl6VmYeN74zCe_Jzz6xasBJTDymbKq5a-LMqhmopC60h2RdepjWDo_HDaam5fOrdoZp_zfMX1Am3xI9v8uKY0W7j-vq_cxQSxhoQrmQJ3VE-3dD0dO-UcBUgiND1H3QxqylX8_VSBNZWBkQNE7OL1NzIMNtZ7Ega0D2dwHCP7eoHsRhQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate max-w-[190px]">Asset Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Administrator Profile" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArCeM0qK2saw-TdD73YrORM1HTcpg5uIPwqnZJh122DZnRJviClvMpVoB4cG-vgkZBLwZLVJFXhyGKDVw5z0zprEiuaJZhaXwEwDCnjy3O_VFT3bu_wq9_oTiflb8UmPlGQeBViiFdr3UbMqPij6DqFVllJDJ37IJMXPb0--MGKMoDEIKsJC9w2s232vHrh-RLzCv720geJ2hZEG5GAqfDkDSnuZ1-aLJ-_DRRMZRn_t5jTwl6rcHYNQ"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin"><div class="flex flex-col w-full pb-28">
+<!-- Micro Breadcrumb & Category Tracker -->
+<div class="flex items-center justify-between py-space-sm mb-space-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="font-label-caption text-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+        Assets
+      </span>
+<span class="text-on-surface-variant/40 text-[10px]">▸</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">AV Equipment</span>
+<span class="text-on-surface-variant/40 text-[10px]">▸</span>
+<span class="font-label-caption text-label-caption text-secondary font-semibold">Live Stream</span>
+</div>
+<!-- Status Chip -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caption text-label-caption tracking-tight">Allotted • Active</span>
+</div>
+</div>
+<!-- Asset Title & Meta Header -->
+<div class="flex flex-col mb-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-snug">4K PTZ Broadcast Camera System</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Community Endowment Trust Asset • Waqf Registry ID: <span class="font-label-data-sm text-label-data-sm text-primary font-medium">#WQF-8842-AV</span></p>
+</div>
+<button aria-label="Quick Share Asset" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface active:scale-95 transition-transform flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Interactive Asset Hero Gallery & Visual Card -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest shadow-md mb-space-lg">
+<!-- Main Equipment Photo Placeholder -->
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-opacity duration-300" data-alt="High-grade matte black professional robotic 4K PTZ camera mounted on a modern acoustic wood pillar overlooking a grand Islamic prayer hall interior with soft natural lighting and elegant arch architecture, product photography style with pristine focus and calm tone." id="main-asset-view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkk8D3CWvExnfoYEsOzs8OzEG7doSQVRpqkegrMYQpsS0q0hVmBiWUhcE40PJ9-4djH7cT4lizu-0-mwlK9ber2fIrDsBPT6nBk8IHMEJhbkjTfPa7KYsLlIZly5c8GNhfDAsqTIvgcEJGz8QM5mYwNtQjf-LrDGuHhL3on1nQ2W81aCEHs4Au3wDXoIt5shTQAgUXqxUaq1RIsyywHq6_28hnUqL4RbaEZ9YhM5OPSIq2ZlgZv-l9dA"/>
+<!-- Gradient Scrim for Overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Trust Badge Overlay -->
+<div class="absolute top-space-sm left-space-sm flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-caption text-label-caption text-on-surface">Verified Physical Custody</span>
+</div>
+<!-- Live Stream Status Tag -->
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest/90 text-on-surface-variant backdrop-blur-md">
+<span class="material-symbols-outlined text-[13px] text-secondary">videocam</span>
+<span class="font-label-data-sm text-label-data-sm">SDI • NDI|HX</span>
+</div>
+<!-- Gallery Angle Selector Pills -->
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between gap-1.5 bg-surface-container-lowest/95 backdrop-blur-md p-1.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-1">
+<button class="gallery-pill active-pill px-2.5 py-1 rounded-md bg-primary text-on-primary font-label-caption text-label-caption transition-all" onclick="switchGallery('front', this)" type="button">Front Lens</button>
+<button class="gallery-pill px-2.5 py-1 rounded-md text-on-surface hover:bg-surface-container font-label-caption text-label-caption transition-all" onclick="switchGallery('serial', this)" type="button">Serial Tag</button>
+<button class="gallery-pill px-2.5 py-1 rounded-md text-on-surface hover:bg-surface-container font-label-caption text-label-caption transition-all" onclick="switchGallery('mount', this)" type="button">Pillar Mount</button>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface-variant px-1.5">3 Angles</span>
+</div>
+</div>
+<!-- Prominent Dynamic QR Code Visual Strip -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<!-- SVG Micro QR Graphic -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1.5 rounded-lg shadow-sm flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full text-on-surface fill-current" shape-rendering="crispEdges" viewbox="0 0 33 33">
+<!-- Simplified scannable-look QR Pattern matrix -->
+<rect fill="currentColor" height="10" width="10" x="0" y="0"></rect>
+<rect fill="#ffffff" height="6" width="6" x="2" y="2"></rect>
+<rect fill="currentColor" height="4" width="4" x="3" y="3"></rect>
+<rect fill="currentColor" height="10" width="10" x="23" y="0"></rect>
+<rect fill="#ffffff" height="6" width="6" x="25" y="2"></rect>
+<rect fill="currentColor" height="4" width="4" x="26" y="3"></rect>
+<rect fill="currentColor" height="10" width="10" x="0" y="23"></rect>
+<rect fill="#ffffff" height="6" width="6" x="2" y="25"></rect>
+<rect fill="currentColor" height="4" width="4" x="3" y="26"></rect>
+<rect height="4" width="3" x="13" y="2"></rect>
+<rect height="6" width="2" x="18" y="2"></rect>
+<rect height="3" width="4" x="13" y="8"></rect>
+<rect height="5" width="5" x="14" y="14"></rect>
+<rect height="3" width="4" x="2" y="13"></rect>
+<rect height="4" width="3" x="8" y="14"></rect>
+<rect height="3" width="3" x="22" y="14"></rect>
+<rect height="2" width="4" x="27" y="14"></rect>
+<rect height="5" width="3" x="13" y="22"></rect>
+<rect height="3" width="6" x="18" y="24"></rect>
+<rect height="5" width="4" x="26" y="24"></rect>
+<rect height="3" width="3" x="21" y="28"></rect>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Fixed Hardware SKU</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-data-lg text-label-data-lg text-primary font-semibold tracking-tight">JMT-AV-2024-009</span>
+<button class="w-6 h-6 rounded flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface active:scale-90 transition-transform" onclick="copySku('JMT-AV-2024-009')" title="Copy SKU" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-caption text-label-caption text-secondary hidden" id="copy-toast">Copied to clipboard!</span>
+</div>
+</div>
+<!-- Enlarge / Print Quick Action -->
+<button class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high transition-colors flex-shrink-0 active:scale-95" onclick="toggleQrModal(true)" type="button">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+<span class="font-label-caption text-label-caption font-semibold mt-0.5 text-center leading-tight">Enlarge • Print</span>
+</button>
+</div>
+</div>
+<!-- QR Code Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="qr-modal">
+<div class="w-full max-w-xs bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl flex flex-col items-center text-center">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">print</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Physical Asset QR Tag</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">Standard weather-proof vinyl asset tag (50mm × 25mm)</p>
+<div class="p-space-md bg-surface-container-low rounded-xl mb-space-md flex flex-col items-center">
+<div class="w-36 h-36 bg-surface-container-lowest p-2 rounded-lg shadow-sm flex items-center justify-center">
+<svg class="w-full h-full text-primary fill-current" shape-rendering="crispEdges" viewbox="0 0 33 33">
+<rect fill="currentColor" height="10" width="10" x="0" y="0"></rect>
+<rect fill="#ffffff" height="6" width="6" x="2" y="2"></rect>
+<rect fill="currentColor" height="4" width="4" x="3" y="3"></rect>
+<rect fill="currentColor" height="10" width="10" x="23" y="0"></rect>
+<rect fill="#ffffff" height="6" width="6" x="25" y="2"></rect>
+<rect fill="currentColor" height="4" width="4" x="26" y="3"></rect>
+<rect fill="currentColor" height="10" width="10" x="0" y="23"></rect>
+<rect fill="#ffffff" height="6" width="6" x="2" y="25"></rect>
+<rect fill="currentColor" height="4" width="4" x="3" y="26"></rect>
+<rect height="4" width="3" x="13" y="2"></rect>
+<rect height="6" width="2" x="18" y="2"></rect>
+<rect height="3" width="4" x="13" y="8"></rect>
+<rect height="5" width="5" x="14" y="14"></rect>
+<rect height="3" width="4" x="2" y="13"></rect>
+<rect height="4" width="3" x="8" y="14"></rect>
+<rect height="3" width="3" x="22" y="14"></rect>
+<rect height="2" width="4" x="27" y="14"></rect>
+<rect height="5" width="3" x="13" y="22"></rect>
+<rect height="3" width="6" x="18" y="24"></rect>
+<rect height="5" width="4" x="26" y="24"></rect>
+<rect height="3" width="3" x="21" y="28"></rect>
+</svg>
+</div>
+<span class="font-label-data-md text-label-data-md text-primary font-bold mt-2">JMT-AV-2024-009</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Sony 4K PTZ Broadcast</span>
+</div>
+<div class="flex items-center gap-space-sm w-full">
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container font-headline-sm text-headline-sm text-on-surface" onclick="toggleQrModal(false)" type="button">Close</button>
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-1.5 shadow-sm" onclick="triggerPrintLabel()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+          Print
+        </button>
+</div>
+</div>
+</div>
+<!-- Core Specifications & Technical Details -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm mb-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Product &amp; Spec Details</h3>
+</div>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Class A Hardware</span>
+</div>
+<div class="space-y-space-md pt-space-xs">
+<!-- Product Name -->
+<div>
+<label class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wide block">Official Nomenclature</label>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Sony 4K PTZ Robotic Camera (Prayer Hall Live Stream)</p>
+</div>
+<!-- Description Block -->
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider block mb-1">Operational Role &amp; Placement</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Professional optical zoom robotic camera installed on Main Prayer Hall mezzanine pillar for Friday Khutbah and community event broadcasts. Connected via isolated VLAN to Central AV Studio.
+        </p>
+</div>
+<!-- Technical Condition & Maintenance Logs -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/60">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">build_circle</span>
+<span class="font-label-caption text-label-caption text-primary font-semibold uppercase tracking-wide">Remarks &amp; Condition History</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+          Installed March 2023. Lens cleaned monthly. Firmware v3.2 updated. Protected by surge suppressor and backup uninterruptible power supply (UPS-04).
+        </p>
+</div>
+</div>
+</div>
+<!-- Audit & Financial Matrix (Bento-style Grid) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Audit &amp; Financial Matrix</h3>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-medium">Synced with Ledger</span>
+</div>
+<!-- 2-Column Metric Grid -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-sm">
+<!-- Purchase Valuation Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caption text-label-caption">Purchase Value</span>
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">$2,450.00</span>
+<p class="font-label-caption text-label-caption text-on-surface-variant mt-0.5 truncate">Waqf AV Donation Fund</p>
+</div>
+</div>
+<!-- Warranty Status Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caption text-label-caption">Warranty Until</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">24 Nov 2025</span>
+<div class="inline-flex items-center gap-1 mt-1 px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm font-semibold">14 Mos Left</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Audit & Physical Verification Trail -->
+<div class="space-y-space-sm">
+<!-- Last Audit Check -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Last Physical Audit</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">15 Aug 2024 • Physical Scan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conducted by Trustee Farooq (Barcode match verified)</p>
+</div>
+</div>
+<!-- Custody & Allotment Line -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">place</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Current Allotment &amp; Venue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Media &amp; IT Committee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Main Hall Mezzanine Pillar B • Rack Unit Switch 02</p>
+</div>
+</div>
+<!-- Transfer History Timeline Micro-Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">history</span>
+<div class="min-w-0">
+<span class="font-label-caption text-label-caption text-on-surface-variant">Previous Venue</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Madrassa Hall (Transferred 10 Jan 2024)</p>
+</div>
+</div>
+<button class="font-label-caption text-label-caption text-secondary font-semibold hover:underline flex-shrink-0" onclick="toggleTransferLog()" type="button">View Log</button>
+</div>
+<!-- Expandable Mini Log -->
+<div class="hidden p-space-sm rounded-lg bg-surface-container text-on-surface text-body-sm space-y-1.5 transition-all" id="transfer-log-drawer">
+<div class="flex items-center justify-between font-label-data-sm text-label-data-sm text-on-surface-variant pb-1">
+<span>10 Jan 2024</span>
+<span>Transferred to Prayer Hall</span>
+</div>
+<div class="flex items-center justify-between font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span>15 Mar 2023</span>
+<span>Initial Commissioning in Madrassa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action & Disposition Section (CRITICAL FEATURE) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md mb-space-lg">
+<!-- Header with Alert Icon -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Damage &amp; Scrap Disposition</h3>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Trustee &amp; Facilities Custody Override</p>
+</div>
+</div>
+</div>
+<!-- Interactive Warning Switch Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low mb-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col pr-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mark as Damaged or Scrapped</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Flags asset offline and notifies Jamaat Audit Board</span>
+</div>
+<!-- Accessible Native-feel Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input class="sr-only peer" id="scrap-toggle" onchange="toggleDisposition(this.checked)" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-error"></div>
+</label>
+</div>
+</div>
+<!-- Conditional Sub-Options Panel (Toggled via Switch) -->
+<div class="hidden transition-all duration-300 space-y-space-sm pt-space-xs" id="disposition-panel">
+<div class="p-space-sm rounded-lg bg-error-container/40">
+<label class="font-label-caption text-label-caption text-error font-semibold uppercase tracking-wider block mb-space-xs">
+          Select Primary Incident Reason
+        </label>
+<!-- Reason Radios -->
+<div class="space-y-1.5">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="text-error focus:ring-0" name="disposition-reason" type="radio" value="defect"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Physical Defect (Motor/Lens Gimbal Lock)</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="text-error focus:ring-0" name="disposition-reason" type="radio" value="water"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Water / Condensation Ingress Damage</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="text-error focus:ring-0" name="disposition-reason" type="radio" value="obsolete"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Obsolete / Irreparable End-of-Life</span>
+</label>
+</div>
+<!-- Optional Incident Notes -->
+<div class="mt-space-sm">
+<label class="font-label-caption text-label-caption text-on-surface-variant block mb-1">Incident Field Notes</label>
+<textarea class="w-full text-body-sm font-body-sm p-2 rounded-lg bg-surface-container-lowest text-on-surface outline-none placeholder:text-on-surface-variant/60 resize-none" placeholder="Detail any visible physical fracture, burnt power supply, or event..." rows="2"></textarea>
+</div>
+<!-- One-Touch Disposition Routing Buttons -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm pt-space-xs">
+<button class="py-2.5 px-2 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center gap-1.5 active:scale-95 transition-transform shadow-sm" onclick="confirmDisposition('maintenance')" type="button">
+<span class="material-symbols-outlined text-[18px]">build</span>
+<span class="truncate">Send to Maintenance</span>
+</button>
+<button class="py-2.5 px-2 rounded-lg bg-error text-on-error font-headline-sm text-headline-sm flex items-center justify-center gap-1.5 active:scale-95 transition-transform shadow-sm" onclick="confirmDisposition('scrap')" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_forever</span>
+<span class="truncate">Move to Scrap Registry</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Reallocation Drawer Modal (Client Interactive) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-end sm:items-center justify-center" id="transfer-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl p-space-lg shadow-2xl space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">swap_horiz</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Transfer / Reallocate Asset</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleTransferModal(false)" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="font-label-caption text-label-caption text-on-surface-variant block mb-1">Target Department / Committee</label>
+<select class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md outline-none">
+<option>Media &amp; IT Committee (Current)</option>
+<option>Sisters Hall Committee</option>
+<option>Madrassa &amp; Youth Directorate</option>
+<option>Security &amp; Surveillance Unit</option>
+<option>Central Waqf Storage Warehouse</option>
+</select>
+</div>
+<div>
+<label class="font-label-caption text-label-caption text-on-surface-variant block mb-1">Specific Physical Location</label>
+<input class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md outline-none" placeholder="e.g. Conference Room A, Upper Gallery Rack 3" type="text"/>
+</div>
+<div>
+<label class="font-label-caption text-label-caption text-on-surface-variant block mb-1">Custodian In-Charge Signoff</label>
+<input class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md outline-none" placeholder="Trustee Name or Jamaat Volunteer ID" type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-3 rounded-lg bg-surface-container font-headline-sm text-headline-sm text-on-surface" onclick="toggleTransferModal(false)" type="button">Cancel</button>
+<button class="flex-1 py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md" onclick="submitTransfer()" type="button">Confirm Move</button>
+</div>
+</div>
+</div>
+<!-- Bottom Sticky Action Buttons -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl px-margin py-space-sm shadow-[0_-4px_16px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-lg mx-auto flex items-center gap-space-sm">
+<!-- Secondary Action: QR Tag Printout -->
+<button class="flex-1 h-12 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high active:scale-95 transition-all flex items-center justify-center gap-2" onclick="toggleQrModal(true)" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span class="font-headline-sm text-headline-sm truncate">Print QR Tag</span>
+</button>
+<!-- Primary Action: Reallocate / Transfer -->
+<button class="flex-1 h-12 rounded-lg bg-primary text-on-primary hover:bg-primary-container active:scale-95 transition-all flex items-center justify-center gap-2 shadow-md" onclick="toggleTransferModal(true)" type="button">
+<span class="material-symbols-outlined text-[20px]">move_up</span>
+<span class="font-headline-sm text-headline-sm truncate">Transfer / Reallocate</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Gallery angle switching simulation
+  function switchGallery(angle, btn) {
+    const img = document.getElementById('main-asset-view');
+    const pills = document.querySelectorAll('.gallery-pill');
+    
+    pills.forEach(p => {
+      p.classList.remove('bg-primary', 'text-on-primary');
+      p.classList.add('text-on-surface');
+    });
+
+    btn.classList.add('bg-primary', 'text-on-primary');
+    btn.classList.remove('text-on-surface');
+
+    img.style.opacity = '0.5';
+    setTimeout(() => {
+      if (angle === 'front') {
+        img.setAttribute('data-alt', 'High-grade matte black professional robotic 4K PTZ camera mounted on a modern acoustic wood pillar overlooking a grand Islamic prayer hall interior, crisp focus.');
+      } else if (angle === 'serial') {
+        img.setAttribute('data-alt', 'Close-up macro photography of technical metal spec plate and barcoded tag on high-end broadcast camera housing serial number JMT-AV-2024-009.');
+      } else if (angle === 'mount') {
+        img.setAttribute('data-alt', 'Wide architectural shot of the mezzanine prayer hall pillar displaying the heavy-duty industrial mounting bracket supporting the robotic broadcast camera.');
+      }
+      img.style.opacity = '1';
+    }, 150);
+  }
+
+  // Quick Copy SKU to Clipboard
+  function copySku(sku) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(sku);
+    }
+    const toast = document.getElementById('copy-toast');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2000);
+  }
+
+  // Modals Toggles
+  function toggleQrModal(show) {
+    const modal = document.getElementById('qr-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function toggleTransferModal(show) {
+    const modal = document.getElementById('transfer-modal');
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function toggleTransferLog() {
+    const drawer = document.getElementById('transfer-log-drawer');
+    drawer.classList.toggle('hidden');
+  }
+
+  // Damage & Scrap Disposition Panel Toggle
+  function toggleDisposition(isFlagged) {
+    const panel = document.getElementById('disposition-panel');
+    if (isFlagged) {
+      panel.classList.remove('hidden');
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      panel.classList.add('hidden');
+    }
+  }
+
+  // Disposition Action Submission
+  function confirmDisposition(destination) {
+    const confirmed = confirm(
+      destination === 'scrap' 
+        ? 'Confirm decommissioning: Move camera JMT-AV-2024-009 to Jamaat Scrap & Salvage registry?'
+        : 'Confirm dispatch: Route camera JMT-AV-2024-009 to Central Maintenance Workorder?'
+    );
+    if (confirmed) {
+      alert('Asset status updated successfully. Custodian board has been alerted.');
+      document.getElementById('scrap-toggle').checked = false;
+      toggleDisposition(false);
+    }
+  }
+
+  function triggerPrintLabel() {
+    alert('Routing 50x25mm tag to Bluetooth Label Printer (Zebra-ZD420)...');
+    toggleQrModal(false);
+  }
+
+  function submitTransfer() {
+    alert('Reallocation request logged. Generating handover chain of custody signature receipt.');
+    toggleTransferModal(false);
+  }
+</script></main></body></html>
+
+<!-- Amanah Jamaat - QR Scanner Modal -->
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "outline": "#717974", "inverse-surface": "#293040", "tertiary-container": "#153a2c", "on-error-container": "#93000a", "primary": "#00241a", "on-primary-container": "#79a694", "surface-variant": "#dce2f7", "secondary-container": "#82f5c1", "surface-container": "#e9edff", "on-surface": "#141b2b", "surface-tint": "#3c6658", "primary-fixed": "#beedd9", "on-tertiary-fixed-variant": "#294e3f", "surface-container-low": "#f1f3ff", "tertiary-fixed": "#c3ecd7", "tertiary": "#002418", "on-primary-fixed": "#002117", "on-secondary-fixed-variant": "#005137", "surface-container-high": "#e1e8fd", "on-tertiary": "#ffffff", "secondary-fixed": "#85f8c4", "on-secondary-fixed": "#002114", "primary-container": "#0d3b2e", "background": "#f9f9ff", "on-surface-variant": "#414845", "on-primary": "#ffffff", "inverse-on-surface": "#edf0ff", "secondary": "#006c4a", "surface-container-highest": "#dce2f7", "on-background": "#141b2b", "error": "#ba1a1a", "on-secondary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#00714e", "error-container": "#ffdad6", "tertiary-fixed-dim": "#a8cfbc", "surface-dim": "#d3daef", "on-tertiary-container": "#7ea492", "on-tertiary-fixed": "#002115", "surface-bright": "#f9f9ff", "primary-fixed-dim": "#a3d0be", "inverse-primary": "#a3d0be", "secondary-fixed-dim": "#68dba9", "outline-variant": "#c0c8c3", "on-primary-fixed-variant": "#234e40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "label-caption": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-data-md": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-data-lg": ["JetBrains Mono"], "label-data-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-caption": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-data-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-data-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-data-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Amanah Jamaat Emblem Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16nZ1jeXEJTfDLJdPy-52VRgv4VaIim18L4oqtlDd5uOML8LrI7PXyRVbz52ZdNchjjK9eMMl6VmYeN74zCe_Jzz6xasBJTDymbKq5a-LMqhmopC60h2RdepjWDo_HDaam5fOrdoZp_zfMX1Am3xI9v8uKY0W7j-vq_cxQSxhoQrmQJ3VE-3dD0dO-UcBUgiND1H3QxqylX8_VSBNZWBkQNE7OL1NzIMNtZ7Ega0D2dwHCP7eoHsRhQ"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate max-w-[190px]">Asset Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Administrator Profile" class="w-11 h-11 flex items-center justify-center rounded-full" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArCeM0qK2saw-TdD73YrORM1HTcpg5uIPwqnZJh122DZnRJviClvMpVoB4cG-vgkZBLwZLVJFXhyGKDVw5z0zprEiuaJZhaXwEwDCnjy3O_VFT3bu_wq9_oTiflb8UmPlGQeBViiFdr3UbMqPij6DqFVllJDJ37IJMXPb0--MGKMoDEIKsJC9w2s232vHrh-RLzCv720geJ2hZEG5GAqfDkDSnuZ1-aLJ-_DRRMZRn_t5jTwl6rcHYNQ"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin"><div class="flex flex-col w-full pb-8 select-none">
+<!-- Viewfinder Frame -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-inverse-surface shadow-xl flex flex-col justify-between" style="min-height: 520px;">
+<!-- Live Camera Simulation Feed -->
+<div class="absolute inset-0 bg-cover bg-center brightness-[0.72] contrast-105" data-alt="First-person POV holding a smartphone scanning a metallic brushed aluminum asset tag on an acoustic rack server inside an ornate Islamic center with warm chandeliers and carved arches in the soft blurred background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1gI7rtydq7YgvHhnUExej7yjRcOIFcmnKca796WBandan7yZa2Hdkj7K7VYkKDeGEAViwy2VufZ2ThuItBGsld2HOXxh-0AiDTo3S32hlCT-2t7TXd4wbRm2gnvIY_n264yx2dKfKVhkjobDcfdiAAC79seCRsbrMtSYTxCOlHKIYlW1nTW_Hs1RzeUEzJnmGafhaQfftjdI-JcJNzwmRAjDuswmOAkaHa6JJjslndk9zTPXbnGfhDQ');"></div>
+<!-- Vignette Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-inverse-surface/90 pointer-events-none"></div>
+<!-- Scanner Top Bar Controls -->
+<div class="relative z-10 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<button aria-label="Dismiss scanner" class="w-10 h-10 rounded-full bg-inverse-surface/70 text-on-primary flex items-center justify-center backdrop-blur-md active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Dynamic Scanner State Capsule -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/90 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-secondary-container -ml-3.5"></span>
+<span class="font-label-caption text-label-caption text-primary-fixed uppercase tracking-wider">Amanah Lens</span>
+</div>
+<!-- Utility Action Pill (Flash & Lens flip) -->
+<div class="flex items-center gap-1 bg-inverse-surface/70 p-1 rounded-full backdrop-blur-md">
+<button aria-label="Toggle flashlight" class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center active:scale-90 transition-transform" id="torch-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]">flashlight_on</span>
+</button>
+<button aria-label="Sound feedback toggle" class="w-8 h-8 rounded-full text-on-primary hover:bg-surface-variant/20 flex items-center justify-center active:scale-90 transition-transform" id="sound-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button aria-label="Switch camera" class="w-8 h-8 rounded-full text-on-primary hover:bg-surface-variant/20 flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">flip_camera_ios</span>
+</button>
+</div>
+</div>
+<!-- Instruction Headline -->
+<div class="text-center pt-1">
+<p class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium tracking-tight drop-shadow-sm">Align Physical Tag</p>
+<p class="font-body-sm text-body-sm text-surface-variant/80">Keep QR code or Waqf barcode centered in frame</p>
+</div>
+</div>
+<!-- Center Reticle & Target Laser -->
+<div class="relative z-10 flex flex-col items-center justify-center my-auto px-space-lg">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Corner Targeting Brackets -->
+<div class="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-secondary-container rounded-tl-xl shadow-[0_0_12px_rgba(130,245,193,0.6)]"></div>
+<div class="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-secondary-container rounded-tr-xl shadow-[0_0_12px_rgba(130,245,193,0.6)]"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-secondary-container rounded-bl-xl shadow-[0_0_12px_rgba(130,245,193,0.6)]"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-secondary-container rounded-br-xl shadow-[0_0_12px_rgba(130,245,193,0.6)]"></div>
+<!-- Inner Glass Reticle Frame -->
+<div class="w-56 h-56 rounded-lg bg-surface-container-lowest/5 backdrop-blur-[1px] relative overflow-hidden flex items-center justify-center">
+<!-- Animated Laser Scan Line -->
+<div class="absolute inset-x-0 h-0.5 bg-gradient-to-r from-transparent via-secondary-container to-transparent shadow-[0_0_16px_#82f5c1] animate-[pulse_1.8s_ease-in-out_infinite]"></div>
+<!-- Micro Crosshair -->
+<span class="material-symbols-outlined text-surface-container-lowest/30 text-3xl font-light">filter_center_focus</span>
+</div>
+<!-- Status Identification Pill -->
+<div class="absolute -bottom-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container shadow-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary-container font-semibold tracking-wide">MATCH FOUND</span>
+</div>
+</div>
+<!-- Zoom Level Selector Switcher -->
+<div class="mt-6 flex items-center bg-inverse-surface/80 p-1 rounded-full backdrop-blur-md gap-1">
+<button class="px-3 py-1 rounded-full text-surface-container-high font-label-data-sm text-label-data-sm active:scale-95 transition-all hover:text-surface-container-lowest" type="button">0.5x</button>
+<button class="px-3.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-data-sm text-label-data-sm font-semibold shadow-sm active:scale-95 transition-all" type="button">1x</button>
+<button class="px-3 py-1 rounded-full text-surface-container-high font-label-data-sm text-label-data-sm active:scale-95 transition-all hover:text-surface-container-lowest" type="button">2x</button>
+</div>
+</div>
+<!-- Empty Spacer for bottom framing -->
+<div class="relative z-10 h-6"></div>
+</div>
+<!-- Real-time Matched Waqf Asset Card (Slide-Up Result) -->
+<div class="w-full mt-3 bg-surface-container-lowest rounded-2xl p-space-md shadow-md flex flex-col gap-space-sm">
+<!-- Card Meta Bar -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-caption text-label-caption text-secondary font-semibold uppercase tracking-wider">Identified Waqf Asset</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-secondary-container font-semibold">Active &amp; Inspected</span>
+</div>
+</div>
+<!-- Asset Title & SKU Monospace Details -->
+<div class="flex items-start justify-between gap-space-sm pt-0.5">
+<div class="flex-1 min-w-0">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate">4K PTZ Broadcast Camera</h2>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-data-md text-label-data-md text-secondary font-medium bg-surface-container-low px-2 py-0.5 rounded">JMT-AV-2024-009</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Audiovisual</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-2xl">videocam</span>
+</div>
+</div>
+<!-- Location & Custodian Data Grid -->
+<div class="grid grid-cols-2 gap-2 mt-1 pt-2">
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+<span class="font-label-caption text-label-caption uppercase tracking-wider">Placement</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Mezzanine Pillar B</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">history_edu</span>
+<span class="font-label-caption text-label-caption uppercase tracking-wider">Last Audit</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">15 Aug • T. Farooq</span>
+</div>
+</div>
+<!-- Action Command Buttons -->
+<div class="flex flex-col gap-2 mt-2 pt-1">
+<!-- Primary Action: Open Full File -->
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center gap-2 font-headline-sm text-headline-sm font-semibold active:scale-[0.99] transition-transform shadow-sm" type="button">
+<span>View Complete Asset Dossier</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Secondary Split Quick-Actions -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl bg-secondary-container/50 text-on-secondary-container flex items-center justify-center gap-1.5 font-body-md text-body-md font-semibold active:scale-95 transition-transform" id="audit-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+<span>Mark Audited</span>
+</button>
+<button class="h-11 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center gap-1.5 font-body-md text-body-md font-semibold active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">move_up</span>
+<span>Transfer / Log</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Manual Input Fallback -->
+<div class="mt-4 flex items-center justify-center">
+<button class="inline-flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm py-2 px-4 rounded-full hover:bg-surface-container-high transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">keyboard</span>
+<span>Trouble scanning? Enter Tag ID manually</span>
+</button>
+</div>
+</div>
+<script>
+  // Micro-interaction for Torch toggle
+  const torchBtn = document.getElementById('torch-toggle');
+  if (torchBtn) {
+    torchBtn.addEventListener('click', () => {
+      torchBtn.classList.toggle('bg-secondary-container');
+      torchBtn.classList.toggle('text-on-secondary-container');
+      torchBtn.classList.toggle('bg-surface-variant/30');
+      torchBtn.classList.toggle('text-on-primary');
+    });
+  }
+
+  // Micro-interaction for quick audit confirmation
+  const auditBtn = document.getElementById('audit-btn');
+  if (auditBtn) {
+    auditBtn.addEventListener('click', () => {
+      const originalHTML = auditBtn.innerHTML;
+      auditBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Recorded!</span>';
+      auditBtn.classList.remove('bg-secondary-container/50');
+      auditBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      setTimeout(() => {
+        auditBtn.innerHTML = originalHTML;
+        auditBtn.classList.add('bg-secondary-container/50');
+      }, 2400);
+    });
+  }
+</script></main></body></html>
+
+<!-- Amanah Jamaat - Resource Reports -->
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "outline": "#717974", "inverse-surface": "#293040", "tertiary-container": "#153a2c", "on-error-container": "#93000a", "primary": "#00241a", "on-primary-container": "#79a694", "surface-variant": "#dce2f7", "secondary-container": "#82f5c1", "surface-container": "#e9edff", "on-surface": "#141b2b", "surface-tint": "#3c6658", "primary-fixed": "#beedd9", "on-tertiary-fixed-variant": "#294e3f", "surface-container-low": "#f1f3ff", "tertiary-fixed": "#c3ecd7", "tertiary": "#002418", "on-primary-fixed": "#002117", "on-secondary-fixed-variant": "#005137", "surface-container-high": "#e1e8fd", "on-tertiary": "#ffffff", "secondary-fixed": "#85f8c4", "on-secondary-fixed": "#002114", "primary-container": "#0d3b2e", "background": "#f9f9ff", "on-surface-variant": "#414845", "on-primary": "#ffffff", "inverse-on-surface": "#edf0ff", "secondary": "#006c4a", "surface-container-highest": "#dce2f7", "on-background": "#141b2b", "error": "#ba1a1a", "on-secondary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#00714e", "error-container": "#ffdad6", "tertiary-fixed-dim": "#a8cfbc", "surface-dim": "#d3daef", "on-tertiary-container": "#7ea492", "on-tertiary-fixed": "#002115", "surface-bright": "#f9f9ff", "primary-fixed-dim": "#a3d0be", "inverse-primary": "#a3d0be", "secondary-fixed-dim": "#68dba9", "outline-variant": "#c0c8c3", "on-primary-fixed-variant": "#234e40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "label-caption": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-data-md": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-data-lg": ["JetBrains Mono"], "label-data-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-caption": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-data-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-data-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-data-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Amanah Jamaat Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16nZ1jeXEJTfDLJdPy-52VRgv4VaIim18L4oqtlDd5uOML8LrI7PXyRVbz52ZdNchjjK9eMMl6VmYeN74zCe_Jzz6xasBJTDymbKq5a-LMqhmopC60h2RdepjWDo_HDaam5fOrdoZp_zfMX1Am3xI9v8uKY0W7j-vq_cxQSxhoQrmQJ3VE-3dD0dO-UcBUgiND1H3QxqylX8_VSBNZWBkQNE7OL1NzIMNtZ7Ega0D2dwHCP7eoHsRhQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Amanah Assets</span><span class="font-label-caption text-label-caption text-outline">Reports</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Administrator Profile" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArCeM0qK2saw-TdD73YrORM1HTcpg5uIPwqnZJh122DZnRJviClvMpVoB4cG-vgkZBLwZLVJFXhyGKDVw5z0zprEiuaJZhaXwEwDCnjy3O_VFT3bu_wq9_oTiflb8UmPlGQeBViiFdr3UbMqPij6DqFVllJDJ37IJMXPb0--MGKMoDEIKsJC9w2s232vHrh-RLzCv720geJ2hZEG5GAqfDkDSnuZ1-aLJ-_DRRMZRn_t5jTwl6rcHYNQ"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8 space-y-space-md">
+<!-- Header Card (Framed dignity, no duplicate brand h1) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-caption text-label-caption mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Shariah Audit &amp; Waqf Compliance
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Audit &amp; Resource Reports</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Generate verified records for Jamaat executive committee &amp; trustees</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<!-- Active Cycle Indicator -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">event_repeat</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface">FY24 Annual Ledger Reconciliation</span>
+</div>
+<span class="font-label-caption text-label-caption text-secondary font-semibold">99.1% Reconciled</span>
+</div>
+</div>
+<!-- Date Range Selector Component -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Reporting Period</span>
+<span class="font-label-caption text-label-caption text-outline">Gregorian &amp; Hijri Align</span>
+</div>
+<!-- Quick preset pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1" id="preset-pills">
+<button class="preset-pill px-3 py-1 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant transition-colors whitespace-nowrap active:scale-95" onclick="selectPreset(this, '01 Nov 2024', '30 Nov 2024')" type="button">
+        This Month
+      </button>
+<button class="preset-pill px-3 py-1 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant transition-colors whitespace-nowrap active:scale-95" onclick="selectPreset(this, '01 Jul 2024', '30 Sep 2024')" type="button">
+        Last Quarter
+      </button>
+<button class="preset-pill px-3 py-1 rounded-full font-label-caption text-label-caption bg-primary-container text-on-primary font-semibold transition-colors whitespace-nowrap active:scale-95" onclick="selectPreset(this, '01 Jan 2024', '31 Dec 2024')" type="button">
+        Year-to-Date (FY24)
+      </button>
+<button class="preset-pill px-3 py-1 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant transition-colors whitespace-nowrap active:scale-95" onclick="selectPreset(this, '', '')" type="button">
+        Custom
+      </button>
+</div>
+<!-- Date Input Fields with Calendar Icons -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="flex flex-col space-y-1">
+<label class="font-label-caption text-label-caption text-outline" for="start-date-input">Start Date</label>
+<div class="flex items-center px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<input class="bg-transparent font-label-data-sm text-label-data-sm text-on-surface w-full focus:outline-none" id="start-date-input" type="text" value="01 Jan 2024"/>
+</div>
+</div>
+<div class="flex flex-col space-y-1">
+<label class="font-label-caption text-label-caption text-outline" for="end-date-input">End Date</label>
+<div class="flex items-center px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">event</span>
+<input class="bg-transparent font-label-data-sm text-label-data-sm text-on-surface w-full focus:outline-none" id="end-date-input" type="text" value="31 Dec 2024"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Reports Container (3 Interactive Categories) -->
+<div class="space-y-space-md">
+<!-- REPORT CATEGORY 1: Current Inventory Report -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-300" id="card-inventory">
+<!-- Header / Accordion trigger -->
+<button class="w-full p-space-md flex items-center justify-between text-left active:bg-surface-container-low/50" onclick="toggleReport('inventory')" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Current Inventory Report</span>
+</div>
+<span class="font-label-caption text-label-caption text-outline">Comprehensive physical endowment ledger</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-caption text-label-caption font-semibold">Active</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 text-[20px]" id="chevron-inventory">expand_more</span>
+</div>
+</button>
+<!-- Collapsible Body (Default Open) -->
+<div class="px-space-md pb-space-md space-y-space-md" id="body-inventory">
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Total Items</span>
+<span class="font-label-data-lg text-label-data-lg text-primary font-bold mt-1">1,428</span>
+<span class="font-body-sm text-[10px] text-secondary mt-0.5">+42 this fiscal</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Book Value</span>
+<span class="font-label-data-lg text-label-data-lg text-primary font-bold mt-1">$248.5k</span>
+<span class="font-body-sm text-[10px] text-outline mt-0.5">Audited USD</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Audit Match</span>
+<span class="font-label-data-lg text-label-data-lg text-secondary font-bold mt-1">98.4%</span>
+<span class="font-body-sm text-[10px] text-on-secondary-container mt-0.5">High confidence</span>
+</div>
+</div>
+<!-- Facility Visual Breakdown with SVG bar -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Breakdown by Facility</span>
+<span class="font-label-caption text-label-caption text-outline">5 Locations</span>
+</div>
+<!-- Stacked Bar Visual -->
+<div class="w-full h-3 rounded-full overflow-hidden flex bg-surface-container-highest">
+<div class="bg-primary h-full" style="width: 44%" title="Main Mosque (628)"></div>
+<div class="bg-secondary h-full" style="width: 22%" title="Madrassa (314)"></div>
+<div class="bg-surface-tint h-full" style="width: 18%" title="Community Hall (257)"></div>
+<div class="bg-primary-fixed-dim h-full" style="width: 9%" title="Mortuary / Janaza (129)"></div>
+<div class="bg-secondary-fixed h-full" style="width: 7%" title="Guest Suites (100)"></div>
+</div>
+<!-- Facility Rows -->
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface font-body-sm">Main Mosque</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">628 items <span class="text-outline font-normal">($124,200)</span></span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface font-body-sm">Madrassa &amp; Classrooms</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">314 items <span class="text-outline font-normal">($48,300)</span></span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint shrink-0"></span>
+<span class="text-on-surface font-body-sm">Community Banquet Hall</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">257 items <span class="text-outline font-normal">($42,100)</span></span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim shrink-0"></span>
+<span class="text-on-surface font-body-sm">Mortuary &amp; Janaza Services</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">129 items <span class="text-outline font-normal">($18,900)</span></span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed shrink-0"></span>
+<span class="text-on-surface font-body-sm">Scholar Guest Suites</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-on-surface font-semibold">100 items <span class="text-outline font-normal">($15,000)</span></span>
+</div>
+</div>
+</div>
+<!-- Facility Photo Montage Insight -->
+<div class="grid grid-cols-2 gap-2">
+<div class="relative rounded-lg overflow-hidden h-24 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Serene interior of an elegant mosque community hall with architectural wooden archways, emerald carpet tiles, and organized audiovisual assets in warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi1VwMceNzmUDGKc6vGR4sCbludz0Q5xcJ7vOiHfzC90dzbv3pIwD-SkQgYHBYJLGwcbMQAE5sZXqwfyYF92QqAPZAKsp4-CPB3Xd0kp4TlO-dgLhyphgQ3_b3KWHk3Q2zzaIYHt5Q6swQUYausqTQHUFOdxZgkpDtse3lz6Cj2rX8Bah9YILapFBsgSWIIXUuVo3DcwvBzhWOENeQCxx3xrqhoOImOu5rrKCDr4ah3ZPLVThUctZKNg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-2">
+<span class="text-[11px] font-label-caption text-surface-container-lowest font-medium">Main Hall Audit Confirmed</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-24 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Organized Madrassa classroom library shelves with tagged religious texts, acoustic divider panels, and digital podium in serene balanced natural illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgNdsVzsuYEOY90KG4rGD8F61EZ1gAtgikapj2_8Velo9BfZQeO3uuSDP8t9OyifuR4vJ0xqf0Nx6y5CFJdg_7brLJhNlhUAZW0OyKMbfNhHBMsUAPolaNB_CbLo2vSyXU0K0kRqILfEJRcrLT7Sg6z1kyTOYZ-ipzXaAFTaRTiW_483-eUSRoy7EP9J1Xor9KD1n-VV5Glj8DTIj6gKMvMFZmbD904hwP0B_zcp7Zzi3TZkPj5pt5fw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-2">
+<span class="text-[11px] font-label-caption text-surface-container-lowest font-medium">Madrassa Tagging 100%</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-tertiary-container active:scale-95 transition-all shadow-sm" onclick="triggerToast('Compiling Official Inventory PDF...')" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Download PDF</span>
+</button>
+<button class="h-11 rounded-lg bg-surface-container text-on-surface flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-surface-container-high active:scale-95 transition-all" onclick="triggerToast('Generating Excel Ledger Sheets...')" type="button">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+</div>
+<!-- REPORT CATEGORY 2: Damage and Scrap Report -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-300" id="card-damage">
+<!-- Header / Accordion trigger -->
+<button class="w-full p-space-md flex items-center justify-between text-left active:bg-surface-container-low/50" onclick="toggleReport('damage')" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">delete_sweep</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Damage &amp; Scrap Report</span>
+</div>
+<span class="font-label-caption text-label-caption text-error font-medium">18 Written-off Assets ($6,320)</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-error-container/70 text-on-error-container font-label-caption text-label-caption font-semibold">Board Filing</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 text-[20px]" id="chevron-damage">expand_more</span>
+</div>
+</button>
+<!-- Collapsible Body -->
+<div class="px-space-md pb-space-md space-y-space-md" id="body-damage">
+<!-- Disposition Breakdown -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Disposition Status</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Total 18 units</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-surface-container-lowest p-2 rounded-lg">
+<span class="block font-label-data-lg text-label-data-lg font-bold text-error">11</span>
+<span class="font-body-sm text-[10px] text-outline leading-tight block mt-0.5">Broken beyond repair</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg">
+<span class="block font-label-data-lg text-label-data-lg font-bold text-on-surface">5</span>
+<span class="font-body-sm text-[10px] text-outline leading-tight block mt-0.5">Obsolete electronics</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg">
+<span class="block font-label-data-lg text-label-data-lg font-bold text-on-surface-variant">2</span>
+<span class="font-body-sm text-[10px] text-outline leading-tight block mt-0.5">Lost / In-transit</span>
+</div>
+</div>
+</div>
+<!-- Itemized Write-Off Audit Table -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Trustee Write-Off Register</span>
+<span class="font-label-caption text-label-caption text-secondary">Verified Signatures</span>
+</div>
+<div class="space-y-2">
+<!-- Row 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-body-md font-semibold text-primary block">Soundcraft 24Ch Analog Mixer</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">SKU: AMN-AUD-041 • Main Hall</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-error">-$1,850</span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t-0 text-body-sm">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Reason: Lightning surge damage (unrepairable)</span>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded bg-surface-container text-on-surface">Approved: Br. Farooq (14 Oct)</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-body-md font-semibold text-primary block">Industrial Commercial Freezer</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">SKU: AMN-KIT-019 • Jamaat Kitchen</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-error">-$2,400</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-body-sm">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Reason: Compressor head rupture (12 yrs age)</span>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded bg-surface-container text-on-surface">Approved: Haji Yunus (02 Nov)</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-body-md font-semibold text-primary block">Optoma 4K Ceiling Projector</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">SKU: AMN-MDR-088 • Seminar Room 2</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm font-semibold text-error">-$820</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-body-sm">
+<span class="font-body-sm text-[11px] text-on-surface-variant">Reason: Optical engine failure during flood</span>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded bg-surface-container text-on-surface">Approved: Imam Zaid (28 Nov)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Evidence & Write-Off Actions -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-tertiary-container active:scale-95 transition-all shadow-sm" onclick="triggerToast('Preparing Board Formal Filing Package...')" type="button">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Board Filing</span>
+</button>
+<button class="h-11 rounded-lg bg-surface-container text-on-surface flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-surface-container-high active:scale-95 transition-all" onclick="triggerToast('Retrieving 26 Inspection Photos...')" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span>Photo Evidence</span>
+</button>
+</div>
+</div>
+</div>
+<!-- REPORT CATEGORY 3: Allotted & Transfer Log -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-300" id="card-transfer">
+<!-- Header / Accordion trigger -->
+<button class="w-full p-space-md flex items-center justify-between text-left active:bg-surface-container-low/50" onclick="toggleReport('transfer')" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">sync_alt</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary truncate">Allotted &amp; Transfer Log</span>
+</div>
+<span class="font-label-caption text-label-caption text-outline">142 movements logged in FY24</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-caption text-label-caption font-semibold">3 Pending</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 text-[20px]" id="chevron-transfer">expand_more</span>
+</div>
+</button>
+<!-- Collapsible Body -->
+<div class="px-space-md pb-space-md space-y-space-md" id="body-transfer">
+<!-- Inter-Facility Movements breakdown -->
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Hall → Youth</span>
+<span class="font-label-data-lg text-label-data-lg text-primary font-bold mt-1">48</span>
+<span class="font-body-sm text-[10px] text-outline mt-0.5">Folding chairs &amp; rugs</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">AV Equipment</span>
+<span class="font-label-data-lg text-label-data-lg text-primary font-bold mt-1">24</span>
+<span class="font-body-sm text-[10px] text-outline mt-0.5">Mic pods &amp; cables</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Kitchen Loaning</span>
+<span class="font-label-data-lg text-label-data-lg text-primary font-bold mt-1">70</span>
+<span class="font-body-sm text-[10px] text-outline mt-0.5">Degs &amp; urns (Nikah)</span>
+</div>
+</div>
+<!-- Pending Sign-Off Alert Callout -->
+<div class="bg-surface-container-high/60 rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">pending_actions</span>
+<div class="min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-semibold text-primary">3 Transfers Awaiting Sign-Off</span>
+<span class="font-label-caption text-label-caption text-secondary font-semibold">Priority</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Physical custody transferred; awaiting receiving trustee digital stamp from Br. Tariq (Youth Wing).
+            </p>
+</div>
+</div>
+<!-- Active Custody Chain Mini List -->
+<div class="space-y-1.5">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Recent Chain of Custody</span>
+<div class="space-y-1.5">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-[11px] font-label-data-sm">TR</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">60x Banqueting Chairs</span>
+<span class="font-label-caption text-label-caption text-outline">Issued by Br. Bilal • To: Sisters Hall</span>
+</div>
+</div>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-semibold">Confirmed</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-[11px] font-label-data-sm">KS</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">4x Wireless Sennheiser Mics</span>
+<span class="font-label-caption text-label-caption text-outline">Issued by Ustadh Umar • To: Madrassa</span>
+</div>
+</div>
+<span class="font-label-caption text-label-caption px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-semibold">Pending</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-tertiary-container active:scale-95 transition-all shadow-sm" onclick="triggerToast('Downloading Custody Ledger &amp; QR Manifest...')" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Custody Chain</span>
+</button>
+<button class="h-11 rounded-lg bg-surface-container text-on-surface flex items-center justify-center gap-2 font-headline-sm text-body-md hover:bg-surface-container-high active:scale-95 transition-all" onclick="triggerToast('Sending Receipt to Mobile Thermal Printer...')" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Receipt</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Share / Scheduled Audit Reports Banner -->
+<div class="rounded-xl bg-gradient-to-br from-primary-container to-tertiary-container text-on-primary p-space-md shadow-md relative overflow-hidden">
+<!-- Ambient decorative islamic geometric motif via inline SVG -->
+<svg class="absolute right-0 bottom-0 translate-x-4 translate-y-4 opacity-10 text-on-primary pointer-events-none" fill="currentColor" height="140" viewbox="0 0 100 100" width="140">
+<polygon points="50 0, 61 35, 98 35, 68 57, 79 91, 50 70, 21 91, 32 57, 2 35, 39 35"></polygon>
+<polygon fill="transparent" points="50 10, 58 38, 88 38, 64 55, 73 83, 50 66, 27 83, 36 55, 12 38, 42 38" stroke="currentColor" stroke-width="2"></polygon>
+</svg>
+<div class="relative z-10 space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">forward_to_inbox</span>
+<span class="font-headline-sm text-headline-sm text-secondary-container">Automated Trustee Dispatch</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+        Automatic Monthly Trustee Summary will be dispatched on the 1st of every month to all 7 verified Shura members via secure encrypted email.
+      </p>
+<div class="pt-2 flex items-center justify-between">
+<div class="flex items-center -space-x-1.5">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px] font-label-data-sm ring-1 ring-primary-container">FZ</span>
+<span class="w-6 h-6 rounded-full bg-surface-tint text-on-primary flex items-center justify-center text-[10px] font-label-data-sm ring-1 ring-primary-container">HM</span>
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[10px] font-label-data-sm ring-1 ring-primary-container">AK</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/60 text-secondary-container text-[10px] font-label-caption ml-2.5">Next: 01 Jan 2025</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-[12px] font-semibold flex items-center gap-1 active:scale-95 transition-transform" onclick="triggerToast('Configuring Shura Trustee Distribution List...')" type="button">
+<span>Manage</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container (Discreet confirmation feedback) -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-opacity duration-300 max-w-[90%]" id="toast-pill">
+<div class="px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface text-body-sm shadow-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span class="font-body-sm" id="toast-text">Report ready</span>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    function selectPreset(button, start, end) {
+      document.querySelectorAll('.preset-pill').forEach(pill => {
+        pill.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+        pill.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      button.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+
+      if (start && end) {
+        document.getElementById('start-date-input').value = start;
+        document.getElementById('end-date-input').value = end;
+        triggerToast('Period updated: ' + start + ' to ' + end);
+      }
+    }
+
+    function toggleReport(id) {
+      const body = document.getElementById('body-' + id);
+      const chevron = document.getElementById('chevron-' + id);
+      const isHidden = body.classList.contains('hidden');
+
+      if (isHidden) {
+        body.classList.remove('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+      } else {
+        body.classList.add('hidden');
+        chevron.style.transform = 'rotate(-90deg)';
+      }
+    }
+
+    function triggerToast(message) {
+      const toast = document.getElementById('toast-pill');
+      const text = document.getElementById('toast-text');
+      text.textContent = message;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2400);
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(13,59,46,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-between items-center h-16 px-space-sm relative"><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caption text-label-caption">Dashboard</span></a><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="inventory" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-caption text-label-caption">Inventory</span></a><div class="flex-1 flex items-center justify-center"><a class="relative -top-3 w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(13,59,46,0.35)] ring-4 ring-surface active:scale-95 transition-transform" data-path="quick-scan" href="#"><span class="material-symbols-outlined text-[28px] text-secondary-container">qr_code_scanner</span></a></div><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="asset-detail" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-caption text-label-caption">Assets</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 transition-colors text-secondary font-semibold" data-path="reports" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-caption text-label-caption">Reports</span></a></div></nav></body></html>
+
+<!-- Amanah Jamaat - Inventory Registry -->
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "outline": "#717974", "inverse-surface": "#293040", "tertiary-container": "#153a2c", "on-error-container": "#93000a", "primary": "#00241a", "on-primary-container": "#79a694", "surface-variant": "#dce2f7", "secondary-container": "#82f5c1", "surface-container": "#e9edff", "on-surface": "#141b2b", "surface-tint": "#3c6658", "primary-fixed": "#beedd9", "on-tertiary-fixed-variant": "#294e3f", "surface-container-low": "#f1f3ff", "tertiary-fixed": "#c3ecd7", "tertiary": "#002418", "on-primary-fixed": "#002117", "on-secondary-fixed-variant": "#005137", "surface-container-high": "#e1e8fd", "on-tertiary": "#ffffff", "secondary-fixed": "#85f8c4", "on-secondary-fixed": "#002114", "primary-container": "#0d3b2e", "background": "#f9f9ff", "on-surface-variant": "#414845", "on-primary": "#ffffff", "inverse-on-surface": "#edf0ff", "secondary": "#006c4a", "surface-container-highest": "#dce2f7", "on-background": "#141b2b", "error": "#ba1a1a", "on-secondary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#00714e", "error-container": "#ffdad6", "tertiary-fixed-dim": "#a8cfbc", "surface-dim": "#d3daef", "on-tertiary-container": "#7ea492", "on-tertiary-fixed": "#002115", "surface-bright": "#f9f9ff", "primary-fixed-dim": "#a3d0be", "inverse-primary": "#a3d0be", "secondary-fixed-dim": "#68dba9", "outline-variant": "#c0c8c3", "on-primary-fixed-variant": "#234e40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-md": "1rem", "space-xl": "2rem" }, fontFamily: { "label-caption": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-data-md": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-data-lg": ["JetBrains Mono"], "label-data-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-caption": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "label-data-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-data-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-data-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Amanah Jamaat Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16nZ1jeXEJTfDLJdPy-52VRgv4VaIim18L4oqtlDd5uOML8LrI7PXyRVbz52ZdNchjjK9eMMl6VmYeN74zCe_Jzz6xasBJTDymbKq5a-LMqhmopC60h2RdepjWDo_HDaam5fOrdoZp_zfMX1Am3xI9v8uKY0W7j-vq_cxQSxhoQrmQJ3VE-3dD0dO-UcBUgiND1H3QxqylX8_VSBNZWBkQNE7OL1NzIMNtZ7Ega0D2dwHCP7eoHsRhQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Amanah Assets</span><span class="font-label-caption text-label-caption text-outline">Inventory</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Administrator Profile" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArCeM0qK2saw-TdD73YrORM1HTcpg5uIPwqnZJh122DZnRJviClvMpVoB4cG-vgkZBLwZLVJFXhyGKDVw5z0zprEiuaJZhaXwEwDCnjy3O_VFT3bu_wq9_oTiflb8UmPlGQeBViiFdr3UbMqPij6DqFVllJDJ37IJMXPb0--MGKMoDEIKsJC9w2s232vHrh-RLzCv720geJ2hZEG5GAqfDkDSnuZ1-aLJ-_DRRMZRn_t5jTwl6rcHYNQ"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full gap-space-md">
+<!-- Interactive Top Action Area -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Search and Auxiliary Buttons -->
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 relative flex items-center bg-surface-container-lowest rounded-xl shadow-sm h-12 px-space-md">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mr-space-sm">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="inventory-search-input" placeholder="Name, SKU, or Location..." type="text"/>
+<button aria-label="Barcode Scanner" class="text-primary hover:text-secondary p-1 rounded-lg transition-transform active:scale-90" id="barcode-search-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+</div>
+<button aria-label="Direct QR Scan" class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-md active:scale-95 transition-transform shrink-0" id="qr-scan-btn" type="button">
+<span class="material-symbols-outlined text-[22px] text-secondary-container">qr_code_scanner</span>
+</button>
+<button aria-label="Filter Options" class="w-12 h-12 rounded-xl bg-surface-container-lowest text-on-surface-variant flex items-center justify-center shadow-sm active:scale-95 transition-transform shrink-0 relative" id="filter-modal-toggle" type="button">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+<span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+</div>
+<!-- Segmented Main State Tabs -->
+<div class="flex p-1 bg-surface-container rounded-xl gap-1" role="tablist">
+<button class="inv-tab flex-1 py-2 px-1 text-center rounded-lg bg-surface-container-lowest shadow-sm font-label-caption text-label-caption text-primary transition-all duration-200" data-tab="all" type="button">
+        All Products <span class="font-label-data-sm text-outline font-normal ml-0.5">(1,428)</span>
+</button>
+<button class="inv-tab flex-1 py-2 px-1 text-center rounded-lg font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-all duration-200" data-tab="active" type="button">
+        Active Inv. <span class="font-label-data-sm text-outline font-normal ml-0.5">(1,180)</span>
+</button>
+<button class="inv-tab flex-1 py-2 px-1 text-center rounded-lg font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-all duration-200" data-tab="damage" type="button">
+        Damage/Scrap <span class="font-label-data-sm text-outline font-normal ml-0.5">(18)</span>
+</button>
+</div>
+<!-- Horizontally Scrollable Category Filter Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-margin px-margin no-scrollbar">
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-caption text-label-caption shadow-sm transition-all" type="button">
+        All Assets
+      </button>
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-caption text-label-caption shadow-sm hover:bg-surface-container-high transition-all" type="button">
+        Audio &amp; Visual
+      </button>
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-caption text-label-caption shadow-sm hover:bg-surface-container-high transition-all" type="button">
+        Prayer Hall Furniture
+      </button>
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-caption text-label-caption shadow-sm hover:bg-surface-container-high transition-all" type="button">
+        Kitchen &amp; Banquet
+      </button>
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-caption text-label-caption shadow-sm hover:bg-surface-container-high transition-all" type="button">
+        Generators &amp; HVAC
+      </button>
+<button class="cat-pill whitespace-nowrap px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-caption text-label-caption shadow-sm hover:bg-surface-container-high transition-all" type="button">
+        IT &amp; Office
+      </button>
+</div>
+</div>
+<!-- Operational Metric Summary Card -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/10 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Inventory Metrics</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Trust
+      </span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<div>
+<span class="font-headline-lg text-headline-lg text-primary">$68,450</span>
+<span class="font-body-sm text-body-sm text-outline ml-1">Total Valuation</span>
+</div>
+<div class="text-right">
+<span class="font-label-data-lg text-label-data-lg text-on-surface font-semibold">248</span>
+<span class="font-body-sm text-body-sm text-outline ml-1">Filtered Items</span>
+</div>
+</div>
+<div class="mt-1 pt-2 flex items-center justify-between bg-surface-container-lowest/60 rounded-lg px-2.5 py-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">history_toggle_off</span>
+        Last Audit: <strong class="font-medium text-on-surface">14 Aug 2024</strong>
+</span>
+<span class="font-label-caption text-label-caption text-secondary font-semibold">98.4% Health</span>
+</div>
+</div>
+<!-- Inventory Card Deck (Vertical Scroll Stream) -->
+<div class="flex flex-col gap-space-md pb-8">
+<!-- Item 1: Line Array Speaker -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all active:scale-[0.99] flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Professional matte black Bose line-array sound system mounted discreetly inside an elegant, sunlit high-ceiling mosque prayer hall with pristine acoustic wood paneling and architectural Islamic arches, studio product aesthetic, warm daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSpzJfU_hpeCh-MGcn3C8jUe4_Tl3jXrd9TpM1p18gWoE5t95FqrypEPh0FfMdIfaDWZUpuGusBgOcbMoxWe-4FslSiheKKVpooTJZRV19GcKhwlxsE2N8ItZKMGzwsS3WsFZptvwe2gmoopJBGiOlGv_OHXPKs940YkbJD3yKBLBzQy-qmUcfWW-_iAOo3Z3yn52HiyZxUFJuOrbaeP7iThfFwy7uHxahzQLCwpA7r6nnmqjbeTu3Kw"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Bose Professional Line-Array Speaker</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium bg-surface-container px-1.5 py-0.5 rounded">JMT-AV-0104</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">• Audio &amp; PA</span>
+</div>
+</div>
+</div>
+<!-- Operational Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-caption text-label-caption shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Active
+        </span>
+</div>
+<!-- Specs & Custodianship Block -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Stock &amp; Allocation</span>
+<span class="font-label-data-md text-label-data-md text-on-surface font-semibold">8 Units <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">(Prayer Hall)</span></span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caption text-label-caption text-outline">Asset Valuation</span>
+<span class="font-label-data-md text-label-data-md text-primary font-bold">$4,800 <span class="font-body-sm text-body-sm font-normal text-outline">($600 ea)</span></span>
+</div>
+</div>
+<!-- Meta Footer & QR Badge Tag -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium tracking-wider">QR-9942</span>
+<button aria-label="Copy QR Code identifier" class="text-outline hover:text-on-surface ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>12 Aug 2024</span>
+<span class="material-symbols-outlined text-[18px] text-outline ml-1">chevron_right</span>
+</div>
+</div>
+</article>
+<!-- Item 2: Chafing Dishes -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all active:scale-[0.99] flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Commercial polished stainless steel buffet chafing dish sets neatly arranged in a gleaming banquet hall commercial kitchen ready for community iftar feast, high-end hospitality lighting and crisp metallic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtPyGUoDfIVcp9nAlHjwbB24OgTv4HXLeC08aolejR3v3Iwz2cor5mnMELkd1UIPzfV1Z9mslp0mwSHxaiincCHSS_MmgA-wuk6r29Zw2OgCMWrxG2RTRcqtK4q3ANrPhA0vdbmFXQK8F_OlHDJy5S6Sji32lAO38Qw162y7HBq0tpymwTH2IVvuYLuXmmM4xKzP1lefmi15dLhbMhNjadOQ1uSLpLdcfO7u4xk8y5tc0agl8E65GWyQ"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Heavy-Duty Chafing Dishes (Stainless)</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium bg-surface-container px-1.5 py-0.5 rounded">JMT-KIT-0042</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">• Kitchen</span>
+</div>
+</div>
+</div>
+<!-- Operational Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-caption text-label-caption shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Active
+        </span>
+</div>
+<!-- Specs & Custodianship Block -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Stock &amp; Allocation</span>
+<span class="font-label-data-md text-label-data-md text-on-surface font-semibold">24 Units <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">(Banquet Kit.)</span></span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caption text-label-caption text-outline">Asset Valuation</span>
+<span class="font-label-data-md text-label-data-md text-primary font-bold">$2,160 <span class="font-body-sm text-body-sm font-normal text-outline">($90 ea)</span></span>
+</div>
+</div>
+<!-- Meta Footer & QR Badge Tag -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium tracking-wider">QR-8120</span>
+<button aria-label="Copy QR Code identifier" class="text-outline hover:text-on-surface ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>02 Jun 2024</span>
+<span class="material-symbols-outlined text-[18px] text-outline ml-1">chevron_right</span>
+</div>
+</div>
+</article>
+<!-- Item 3: Carpet Deep Cleaner (Damaged/Warning Status) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all active:scale-[0.99] flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="Heavy duty yellow and dark teal commercial carpet extractor cleaning machine parked beside lush green patterned mosque prayer carpet rolls in a maintenance facility, clean studio industrial photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD07XlFXqep0kT43bw47PcS5-WPCxvh3OMrge0mgtnawuQOkV8u11XI7-jQ9XuEVk59Ub7Qr48UsbqDwMni8e64OoRhBFt8bLZ6XNO42NdDFXt9DYEkIGKARnu0hQaNsdovUqu2uYzjl1bafsNfQ3bGWce3L7U4JAIOnmE9-a6P4QeG_2NfCfYlxaXiB8cQrqXnAggCkq_yPkfQqyW5SDJqLeuUgkrCn5bjiJPaYzRmlNS_B2BSiBVLRg"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Industrial Carpet Deep-Cleaner Unit</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium bg-surface-container px-1.5 py-0.5 rounded">JMT-MNT-0019</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">• Maintenance</span>
+</div>
+</div>
+</div>
+<!-- Amber Warning Badge -->
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-variant text-on-surface-variant font-label-caption text-label-caption shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+          Repair Req.
+        </span>
+</div>
+<!-- Warning Notification Sub-strip -->
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">build_circle</span>
+<span class="truncate">Damage Reported: Solenoid pump valve fault</span>
+</div>
+<!-- Specs & Custodianship Block -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Stock &amp; Allocation</span>
+<span class="font-label-data-md text-label-data-md text-on-surface font-semibold">2 Units <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">(Basement Storage)</span></span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caption text-label-caption text-outline">Asset Valuation</span>
+<span class="font-label-data-md text-label-data-md text-primary font-bold">$1,750 <span class="font-body-sm text-body-sm font-normal text-outline">($875 ea)</span></span>
+</div>
+</div>
+<!-- Meta Footer & QR Badge Tag -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium tracking-wider">QR-3011</span>
+<button aria-label="Copy QR Code identifier" class="text-outline hover:text-on-surface ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>20 Jul 2024</span>
+<span class="material-symbols-outlined text-[18px] text-outline ml-1">chevron_right</span>
+</div>
+</div>
+</article>
+<!-- Item 4: Trustee Chairs (Scrapped / Red Badge) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all active:scale-[0.99] flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 shadow-sm relative flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[32px]">event_seat</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">High-Back Executive Trustee Chairs</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium bg-surface-container px-1.5 py-0.5 rounded">JMT-FRN-0088</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">• Committee</span>
+</div>
+</div>
+</div>
+<!-- Red Critical Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-caption text-label-caption shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+          Scrapped
+        </span>
+</div>
+<!-- Specs & Custodianship Block -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption text-outline">Count &amp; Resolution</span>
+<span class="font-label-data-md text-label-data-md text-on-surface font-semibold">6 Units <span class="font-body-sm text-body-sm font-normal text-error">(Disposed)</span></span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caption text-label-caption text-outline">Residual Book Value</span>
+<span class="font-label-data-md text-label-data-md text-outline font-semibold line-through">$900</span>
+</div>
+</div>
+<!-- Meta Footer & Overdue Audit Alert -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-highest px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_2</span>
+<span class="font-label-data-sm text-label-data-sm text-primary font-medium tracking-wider">QR-1102</span>
+<button aria-label="Copy QR Code identifier" class="text-outline hover:text-on-surface ml-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-error font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>15 Jan 2024 (Overdue)</span>
+<span class="material-symbols-outlined text-[18px] text-outline ml-1">chevron_right</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Dual Floating Action Sticky Bar -->
+<div class="sticky bottom-2 z-20 flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-12 rounded-xl bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-transform" id="export-action-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">download</span>
+      Export List
+    </button>
+<button class="flex-[1.5] h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-xl active:scale-95 transition-transform" id="quick-audit-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">add_task</span>
+      + Quick Stock Audit
+    </button>
+</div>
+</div>
+<script>
+  (function initJamaatInventory() {
+    // Tab switching micro-interactions
+    const tabs = document.querySelectorAll('.inv-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-surface-container-lowest', 'shadow-sm', 'text-primary');
+        tab.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Category pills toggle
+    const pills = document.querySelectorAll('.cat-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        pill.classList.add('bg-primary', 'text-on-primary');
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+    });
+
+    // Copy SKU/QR feedback
+    const copyButtons = document.querySelectorAll('[aria-label="Copy QR Code identifier"]');
+    copyButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const original = icon.textContent;
+          icon.textContent = 'check';
+          icon.classList.add('text-secondary');
+          setTimeout(() => {
+            icon.textContent = original;
+            icon.classList.remove('text-secondary');
+          }, 1200);
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(13,59,46,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-between items-center h-16 px-space-sm relative"><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caption text-label-caption">Dashboard</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 transition-colors text-secondary font-semibold" data-path="inventory" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-caption text-label-caption">Inventory</span></a><div class="flex-1 flex items-center justify-center"><a class="relative -top-3 w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(13,59,46,0.35)] ring-4 ring-surface active:scale-95 transition-transform" data-path="quick-scan" href="#"><span class="material-symbols-outlined text-[28px] text-secondary-container">qr_code_scanner</span></a></div><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="asset-detail" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-caption text-label-caption">Assets</span></a><a class="flex-1 flex flex-col items-center justify-center gap-0.5 h-12 text-on-surface-variant transition-colors hover:text-on-surface" data-path="reports" href="#"><span class="material-symbols-outlined text-[22px]">bar_chart</span><span class="font-label-caption text-label-caption">Reports</span></a></div></nav></body></html>
